@@ -9,13 +9,10 @@ function InfoBox({ title, cases, total, active, ...props }) {
       className={`infoBox ${active && "infoBox--selected"}`}
     >
       <CardContent>
-        {/* title */}
         <Typography className="infoBox__title" color="textSecondary">
           {title}
         </Typography>
-        {/* number cases */}
         <h2 className="infoBox__cases">{cases}</h2>
-        {/* totals */}
         <Typography className="infoBox__total" color="textSecondary">
           {total} Total
         </Typography>
